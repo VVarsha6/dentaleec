@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './Sidebar/index.js';
 
 function App() {
   return (
    <div>
+   <Sidebar/>
     </div>
   );
 }
