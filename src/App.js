@@ -7,8 +7,8 @@ import { Deptcamp, Screening, Turnover } from "./pages/Deptcamp";
 function App() {
   return (
     <Router>
-      <FormWithYup />
       <Sidebar />
+      <FormWithYup />
       <Routes>
         <Route path="/Deptcamp" exact component={Deptcamp} />
         <Route path="/Deptcamp/Screening" exact component={Screening} />

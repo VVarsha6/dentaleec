@@ -45,15 +45,15 @@ const FormWithYup = () => {
       </select>
       <p>{errors.dropdown?.message}</p>
 
-      <p>Patient Entry</p>
-      <label htmlFor="patient-age">age:</label>
+      <p className='form-subtitle'>Patient Entry</p>
+      <label htmlFor="patient-age">Age</label>
       <input id="patient-age" {...register('age')} placeholder="enter age" />
       <p>{errors.age?.message}</p>
 
       <label htmlFor='chk-outpatient'>Outpatient</label>
       <input id="chk-outpatient" {...register('checkbox')} type="checkbox" />
       <p>{errors.checkbox?.message}</p>
-      <button type="submit">Submit</button>
+      <button type="submit">SUBMIT</button>
     </form>
 
 
