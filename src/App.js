@@ -1,4 +1,4 @@
-
+import './App.css'
 import Sidebar from "./components/Sidebar";
 import FormWithYup from "./forms/FormWithYup";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
