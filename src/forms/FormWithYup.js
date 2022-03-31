@@ -2,6 +2,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import "./forms.css"
 
 const inputSchema = yup.object().shape({
   name: yup
