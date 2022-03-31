@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position:none;
+    
+  }
+  .DeptOP,
+  .Deptcamp,
+  .Tcc,
+  .Analytics,
+  .Satcamp
+   {
+    display: flex;
+    margin-left: 260px;
+    font-size: 2rem;
+  }
+  
