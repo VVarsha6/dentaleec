@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import FormWithYup from './forms/FormWithYup';
+import FormAction from './forms/FormAction';
 
 function App() {
   return (
-   <div>
+   <div className='wrapper'>
+    {/* <FormAction></FormAction> */}
+    <FormWithYup />
     </div>
   );
 }
