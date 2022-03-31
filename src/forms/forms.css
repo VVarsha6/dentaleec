@@ -1,0 +1,19 @@
+form  {
+    background-color: red;
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    text-decoration: none;
+    
+    cursor: pointer;
+   
+  width: 50%;
+  
+  padding: 10px;
+  }
+  
