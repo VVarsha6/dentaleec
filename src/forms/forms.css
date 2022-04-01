@@ -1,22 +1,18 @@
-form {
-  background-color: #c8a2c8;
+form  {
+  background-color:#C8A2C8;
   border: none;
-  display: block;
-  margin: auto;
-  margin-top: 5rem;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  position: absolute;
+  top: 180px;
+  left: 280px;
   text-decoration: none;
-  width: 50%;
-  padding: 10px;
-}
 
-label {
-  color: black;
-  margin-right: 20px;
-  font-size: 1.2rem;
-}
+  cursor: pointer;
 
-.form-subtitle {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 1.3rem;
+width: 50%;
+
+padding: 10px;
 }
