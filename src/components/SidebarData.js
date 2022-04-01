@@ -5,27 +5,27 @@ import * as FaIcons from 'react-icons/fa';
   
 export const SidebarData = [
   {
-    title: "Deptcamp",
+    title: "Department Camp",
     path: "/Deptcamp",
     icon: <FaIcons.FaCampground/>,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
   
-    subNav: [
-      {
-        title: "Turnover",
-        path: "/Deptcamp/Turnover",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Screening",
-        path: "/Deptcamp/Screening",
-        icon: <IoIcons.IoIosPaper />,
-      },
-    ],
+    // subNav: [
+    //   {
+    //     title: "Turnover Camp",
+    //     path: "/Deptcamp/Turnover",
+    //     icon: <IoIcons.IoIosPaper />,
+    //   },
+    //   {
+    //     title: "Screening Camp",
+    //     path: "/Deptcamp/Screening",
+    //     icon: <IoIcons.IoIosPaper />,
+    //   },
+    // ],
   },
   {
-    title: "DeptOP",
+    title: "Department OP",
     path: "/DeptOP",
     icon: <FaIcons.FaSyringe/>,
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -39,17 +39,31 @@ export const SidebarData = [
     iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
-    title: "Satcamp",
+    title: "Satellite Center",
     path: "/Satcamp",
     icon: <FaIcons.FaSatellite />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
-    title: "Tcc",
+    title: "TCC",
     path: "/Tcc",
     icon: <FaIcons.FaPersonBooth/>,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
+  },
+  {
+    title: "View Data",
+    path: "/ViewData",
+    icon: <FaIcons.FaSyringe/>,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+   iconOpened: <RiIcons.RiArrowUpSFill />,
+  },
+  {
+    title: "Kovur Center",
+    path: "/Kovur",
+    icon: <FaIcons.FaSyringe/>,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+   iconOpened: <RiIcons.RiArrowUpSFill />,
   },
 ];

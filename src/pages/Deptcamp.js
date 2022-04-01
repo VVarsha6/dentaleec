@@ -8,18 +8,3 @@ export const Deptcamp = () => {
   );
 };
 
-export const Turnover = () => {
-  return (
-    <div className="Deptcamp">
-      <h1>Turnover</h1>
-    </div>
-  );
-};
-  
-export const Screening = () => {
-  return (
-    <div className="Deptcamp">
-      <h1>Screening</h1>
-    </div>
-  );
-};

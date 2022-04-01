@@ -34,7 +34,7 @@ const FormWithYup = () => {
     <form onSubmit={handleSubmit}>
       <label htmlFor='organizer'>Organizer</label>
       <input id="organizer" {...register('name')} type="text" placeholder='enter name' />
-      <p>{errors.name?.message}</p>
+      <p className='yup_error'>{errors.name?.message}</p>
 
       <label htmlFor='dropdown'>Dropdown</label>
       <select id="dropdown" {...register('dropdown')}  >
@@ -43,16 +43,16 @@ const FormWithYup = () => {
         <option value="d2">opt2</option>
         <option value="d3">opt3</option>
       </select>
-      <p>{errors.dropdown?.message}</p>
+      <p className='yup_error'>{errors.dropdown?.message}</p>
 
       <p className='form-subtitle'>Patient Entry</p>
       <label htmlFor="patient-age">Age</label>
       <input id="patient-age" {...register('age')} placeholder="enter age" />
-      <p>{errors.age?.message}</p>
+      <p className='yup_error'>{errors.age?.message}</p>
 
       <label htmlFor='chk-outpatient'>Outpatient</label>
       <input id="chk-outpatient" {...register('checkbox')} type="checkbox" />
-      <p>{errors.checkbox?.message}</p>
+      <p className='yup_error'>{errors.checkbox?.message}</p>
       <button type="submit">SUBMIT</button>
     </form>
 
