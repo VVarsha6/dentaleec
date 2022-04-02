@@ -2,8 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  position: none;
 }
+
 .DeptOP,
 .Deptcamp,
 .Tcc,
@@ -12,7 +12,6 @@
 .kovur,
 .View{
   color: black;
-  margin-left: 260px;
   font-size: 2rem;
 }
 

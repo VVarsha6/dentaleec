@@ -1,6 +1,6 @@
 import React from "react";
 
-export const DeptOP = () => {
+const DeptOP = () => {
   return (
     <div className="DeptOP main-body">
       <h1>DeptOP</h1>
@@ -8,4 +8,4 @@ export const DeptOP = () => {
   );
 };
 
-
+export { DeptOP }

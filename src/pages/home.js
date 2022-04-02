@@ -1,6 +1,6 @@
 import React from "react";
 
-export const home = () => {
+export const Home = () => {
   return (
     <div className="Tcc main-body">
       <h1>HI Home</h1>

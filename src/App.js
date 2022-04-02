@@ -1,28 +1,21 @@
 import './App.css'
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Deptcamp } from "./pages/Deptcamp";
-import { Analytics } from './pages/Analytics';
-import { DeptOP } from './pages/DeptOP';
-import { Kovur } from './pages/Kovur';
-import { Satcamp } from './pages/Satcamp';
-import { Tcc } from './pages/Tcc';
-import { ViewData } from './pages/ViewData';
+import { DeptCamp, ViewData, Analytics, DeptOP, Tcc, SatCamp, Kovur } from "./pages/index";
 
 function App() {
   return (
     <Router>
-      {/* <home /> */}
       <Sidebar />
       <Routes>
-        <Route path="/Deptcamp" element={<Deptcamp />} />
+        <Route path="/Deptcamp" element={<DeptCamp />} />
+        <Route path="/Satcamp" element={<SatCamp />} />
         <Route path="/Analytics" element={<Analytics />} />
         <Route path="/DeptOP" element={<DeptOP />} />
         <Route path="/Kovur" element={<Kovur />} />
-        <Route path="/Satcamp" element={<Satcamp />} />
         <Route path="/Tcc" element={<Tcc />} />
         <Route path="/ViewData" element={<ViewData />} />
-        <Route path='/home' />
+        <Route exact path='/' />
       </Routes>
     </Router>
 

@@ -1,15 +1,13 @@
 import React from "react";
 import "../App.css";
 import FormWithYup from "../forms/FormWithYup";
-import "./Deptcamp.css"
 
-const Deptcamp = () => {
+const DeptCamp = () => {
   return (
-    <div className="Deptcamp main-body" >
-      {/* <h1>Dept camp</h1> */}
-       <FormWithYup />
-    </div>
+    <section className="main-body Deptcamp" >
+      <FormWithYup />
+    </section>
   );
 };
 
-export { Deptcamp }
+export { DeptCamp }
