@@ -13,12 +13,6 @@ const inputSchema = yup.object().shape({
     .number()
     .required()
     .positive('enter valid age'),
-  // dob: yup
-  //   .date()
-  //   .required('Date is required')
-  //   .test('DOB', 'Please choose a valid date of birth', value => {
-  //     return moment().diff(moment(value), 'years') >= 18;
-  //   }),
   checkbox: yup.boolean().oneOf([true], 'unchecked'),
   dropdown: yup
     .string()
@@ -31,7 +25,7 @@ const FormWithYup = () => {
     handleSubmit,
   } = useForm({ resolver: yupResolver(inputSchema) });
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit(onsubmit)}>
       <label htmlFor='organizer'>Organizer</label>
       <input id="organizer" {...register('name')} type="text" placeholder='enter name' />
       <p className='yup_error'>{errors.name?.message}</p>
@@ -45,15 +39,15 @@ const FormWithYup = () => {
       </select>
       <p className='yup_error'>{errors.dropdown?.message}</p>
 
-      <p className='form-subtitle'>Patient Entry</p>
+      {/* <p className='form-subtitle'>Patient Entry</p> */}
       <label htmlFor="patient-age">Age</label>
       <input id="patient-age" {...register('age')} placeholder="enter age" />
       <p className='yup_error'>{errors.age?.message}</p>
 
       <label htmlFor='chk-outpatient'>Outpatient</label>
       <input id="chk-outpatient" {...register('checkbox')} type="checkbox" />
-      <p className='yup_error'>{errors.checkbox?.message}</p>
-      <button type="submit">SUBMIT</button>
+      {/* <p className='yup_error'>{errors.checkbox?.message}</p> */}
+      <input type="submit"/>
     </form>
 
 
