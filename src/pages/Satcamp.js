@@ -1,5 +1,6 @@
 import React from "react";
-import FormWithYup from "../forms/FormWithYup";
+import "../App.css";
+import FormWithYup from "../Forms/FormWithYup";
 
 export const SatCamp = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import FormWithYup from "../forms/FormWithYup";
+import FormWithYup from "../Forms/FormWithYup";
 
 const DeptCamp = () => {
   return (
