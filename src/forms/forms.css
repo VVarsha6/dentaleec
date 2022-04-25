@@ -1,82 +1,83 @@
-
-.form-camp {
-  background-color:#fff;
-  color: white;
-  width: 60%;
-  height: 500px;
-  padding: 10px;
-  margin: auto;
-  margin-top: 30px;
+.fullForm {
+  display: flex;
+  flex-direction: row;
 }
 
-.form-element{
+.form-camp {
+  border: 2px solid #d3d3d3;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 1em;
+  text-align: left;
+  width: 600px;
+}
+
+.form-element {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 45px;
 }
-.chkbox{
+.chkbox {
   width: 20px;
   height: 20px;
-  position:relative;
-  top:15px;
-}
-
-.form-label{
-  text-align: end;
-  
-}
-
-.yup_error{
-  color:rgb(255, 0, 0);
-  font-size:20px;
   position: relative;
-  left:265px;
+  top: 15px;
 }
 
-.center-hori{
- display: block;
- margin: auto;
- color:#fff;
- background-color: #162840;
- border-radius: 5px;
- border: 2px solid #fff;
- width:150px;
- height: 35px;
- 
+.form-label {
+  text-align: end;
+}
+
+.yup_error {
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+  position: relative;
+  left: 265px;
+}
+
+.center-hori {
+  display: block;
+  margin: auto;
+  color: #fff;
+  background-color: #162840;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  width: 150px;
+  height: 35px;
 }
 .center-hori:hover {
-  background-color: #162840e2
+  background-color: #162840e2;
 }
 
 .center-hori:active {
-  background-color:#162840;
+  background-color: #162840;
   box-shadow: 0 2px rgb(90, 100, 209);
   transform: translateY(4px);
 }
 
-input[type=text] {
-  border: 2px solid #EFEFEF;
-  background-color: #EFEFEF;
+input[type="text"] {
+  border: 2px solid #efefef;
+  background-color: #efefef;
   border-radius: 5px;
   height: 35px;
   width: 500px;
-  position:relative;
-  top:8px;
-  
+  position: relative;
+  top: 8px;
 }
-input[type=text]:focus {
+input[type="text"]:focus {
   background-color: #fff;
 }
-select
-{
-  background-color: #EFEFEF;
-  border: 2px solid #EFEFEF;
-  border-radius:8px;
+select {
+  background-color: #efefef;
+  border: 2px solid #efefef;
+  border-radius: 5px;
   height: 35px;
-  width: 500px;
-  position:relative;
-  top:8px;
-  
+  width: 300px;
+  position: relative;
+  top: 8px;
 }
 
 select:focus {
@@ -84,34 +85,33 @@ select:focus {
 }
 
 input {
-  border: 2px solid #EFEFEF;
-  background-color: #EFEFEF;
+  border: 2px solid #efefef;
+  background-color: #efefef;
   border-radius: 5px;
   height: 35px;
   width: 500px;
-  position:relative;
-  top:6px;
-  
+  position: relative;
+  top: 6px;
 }
 input:focus {
   background-color: #fff;
 }
-label{
-  color:#162840;
-  padding:10px;
+label {
+  color: #162840;
+  padding: 10px;
   font-size: 20px;
   font-family: "Inter";
-  
 }
 
-.form-subtitle{
+.form-subtitle {
   color: #162840;
   position: relative;
-  left:50px;
+  /* left: 50px; */
   font-size: 25px;
   font-family: "Inter";
-  
-
 }
 
-
+.input-format {
+  width: 300px;
+  overflow: hidden;
+}
