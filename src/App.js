@@ -1,13 +1,23 @@
-import './App.css'
+import "./App.css";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { DeptCamp, ViewData, Analytics, DeptOP, Tcc, SatCamp, Kovur } from "./pages/index";
+import {
+  DeptCamp,
+  ViewData,
+  Analytics,
+  DeptOP,
+  Tcc,
+  SatCamp,
+  Kovur,
+} from "./pages/index";
+import Organisation from "./containers/Organisation";
 
 function App() {
   return (
     <Router>
       <Sidebar />
       <Routes>
+        <Route path="/Organisation" element={<Organisation />} />
         <Route path="/Deptcamp" element={<DeptCamp />} />
         <Route path="/Satcamp" element={<SatCamp />} />
         <Route path="/Analytics" element={<Analytics />} />
@@ -15,10 +25,9 @@ function App() {
         <Route path="/Kovur" element={<Kovur />} />
         <Route path="/Tcc" element={<Tcc />} />
         <Route path="/ViewData" element={<ViewData />} />
-        <Route exact path='/' />
+        <Route exact path="/" />
       </Routes>
     </Router>
-
   );
 }
 
