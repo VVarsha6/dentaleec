@@ -7,14 +7,14 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "plop": "^3.0.6",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-hook-form": "^7.29.0",
-    "react-icons": "^4.3.1",
-    "react-pro-sidebar": "^0.7.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "^5.0.0",
-    "styled-components": "^5.3.5",
+    "reactstrap": "^9.0.2",
+    "sass": "^1.51.0",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
@@ -22,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate": "plop --plopfile internals/generators/index.js",
+    "test:generators": "ts-node --project=./internals/ts-node.tsconfig.json ./internals/testing/generators/test-generators.ts"
   },
   "eslintConfig": {
     "extends": [
