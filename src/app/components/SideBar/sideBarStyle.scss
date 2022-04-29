@@ -1,0 +1,57 @@
+.sidebar {
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 310px;
+  background-color: #faf5ef;
+  padding-right: 0.7em;
+
+  &__logo {
+    display: grid;
+    place-items: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: Mulish;
+    color: black;
+  }
+
+  &__menu {
+    position: relative;
+    padding-top: 1rem;
+    padding-right: 1rem;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      place-content: flex-start;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: Mulish;
+      color: black;
+      transition: color 0.3s ease-in-out;
+
+      &.active {
+        border-radius: 10px;
+        color: white;
+        background-color: #abc4c6;
+        font-weight: 700;
+        font-family: Mulish;
+        transition: 0.3s ease-in-out;
+      }
+
+      &__icon {
+        margin-right: 1.2rem;
+
+        i {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.sidebarHorizontal {
+  border-top: 1px solid rgb(199, 199, 199);
+}
