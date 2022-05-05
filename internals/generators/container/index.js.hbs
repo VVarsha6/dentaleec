@@ -1,0 +1,53 @@
+/**
+*
+* {{properCase name }}
+*
+*/
+
+{{#if memo}}
+import React, { memo } from 'react';
+{{else}}
+import React from 'react';
+{{/if}}
+import PropTypes from 'prop-types';
+import { connect,useSelector,useDispatch } from 'react-redux';
+{{#if wantHeaders}}
+import { Helmet } from 'react-helmet';
+{{/if}}
+{{#if wantMessages}}
+import { FormattedMessage } from 'react-intl';
+{{/if}}
+import { compose } from 'redux';
+{{#if wantActionsAndReducer}}
+import { useInjectReducer } from 'utils/injectReducer';
+import reducer from './reducer';
+{{/if}}
+{{#if wantMessages}}
+import messages from './messages';
+{{/if}}
+import './{{ camelCase name }}Style.scss';
+
+export default function {{ properCase name }}() {
+{{#if wantActionsAndReducer}}
+useInjectReducer({ key: '{{ camelCase name }}', reducer });
+{{/if}}
+const dispatch = useDispatch();
+const data = useSelector(state => get(state, 'data'));
+
+return (
+<div className="{{camelCase name}}">
+  {{#if wantHeaders}}
+  <Helmet>
+    <title>{{properCase name}}</title>
+    <meta name="description" content="Description of {{properCase name}}" />
+  </Helmet>
+  {{/if}}
+  {{#if wantMessages}}
+  <FormattedMessage {...messages.header} />
+  {{/if}}
+</div>
+);
+}
+
+{{ properCase name }}.propTypes = {
+};

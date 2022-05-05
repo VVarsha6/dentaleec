@@ -1,0 +1,27 @@
+body {
+  background-color: #abc4c6;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+.mainLayout {
+  width: auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.35);
+}
+
+.subsLayout {
+  background-color: #faf5ef;
+  border-radius: 0 0 0 15px;
+}
+
+.formLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
