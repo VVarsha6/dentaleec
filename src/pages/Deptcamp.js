@@ -4,10 +4,10 @@ import FormWithYup from "../forms/FormWithYup";
 
 const DeptCamp = () => {
   return (
-    <section className="main-body Deptcamp" >
+    <section className="main-body Deptcamp">
       <FormWithYup />
     </section>
   );
 };
 
-export { DeptCamp }
+export { DeptCamp };
