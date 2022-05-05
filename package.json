@@ -14,11 +14,7 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "^5.0.0",
     "reactstrap": "^9.0.2",
-<<<<<<< HEAD
-    "styled-components": "^5.3.5",
-=======
     "sass": "^1.51.0",
->>>>>>> aef5ba03d0291f61fda18b3336d48d9727162400
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
