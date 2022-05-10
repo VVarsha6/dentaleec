@@ -5,8 +5,8 @@
  */
 
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Table } from "reactstrap";
-import OrganisationForm from "../../components/OrganisationForm";
 import SidebarLayout from "../../components/SidebarLayout";
 import TitleBar from "../../components/TitleBar";
 import "./organisationStyle.scss";
@@ -21,26 +21,23 @@ export default function Organisation() {
         </Col>
         <Col xs="9" className="formLayout">
           <p className="primaryHeading">ORGANISATION</p>
+          <div className="d-flex flex-row-reverse mx-4 pb-2">
+            <Link
+              to="/organisationentry"
+              className="button text-decoration-none"
+            >
+              ADD
+            </Link>
+          </div>
           <Table>
             <thead>
               <tr>
-              <th>
-                S.No.
-              </th>
-              <th>
-                Organisation Name
-              </th>
-              <th>
-                Organiser Name
-              </th>
-              <th>
-                Address
-              </th>
-              <th>
-                Ph.No.
-              </th>
-              <th>
-              </th>
+                <th>S.No.</th>
+                <th>Organisation Name</th>
+                <th>Organiser Name</th>
+                <th>Address</th>
+                <th>Ph.No.</th>
+                <th></th>
               </tr>
             </thead>
           </Table>

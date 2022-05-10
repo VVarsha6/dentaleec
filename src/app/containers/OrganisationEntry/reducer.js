@@ -1,15 +1,15 @@
 /*
  *
- * Dashboard reducer
+ * OrganisationEntry reducer
  *
  */
-import produce from "immer";
-import { DEFAULT_ACTION } from "./constants";
+import produce from 'immer';
+import { DEFAULT_ACTION } from './constants';
 
 export const initialState = {};
 
 /* eslint-disable default-case, no-param-reassign */
-const dashboardReducer = (state = initialState, action) =>
+const organisationEntryReducer = (state = initialState, action) =>
   produce(state, (/* draft */) => {
     switch (action.type) {
       case DEFAULT_ACTION:
@@ -17,4 +17,4 @@ const dashboardReducer = (state = initialState, action) =>
     }
   });
 
-export default dashboardReducer;
+export default organisationEntryReducer;
