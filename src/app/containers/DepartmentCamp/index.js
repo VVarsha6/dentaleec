@@ -5,8 +5,8 @@
  */
 
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import OrganisationForm from "../../components/OrganisationForm";
+import { Link } from "react-router-dom";
+import { Container, Row, Col, Table } from "reactstrap";
 import SidebarLayout from "../../components/SidebarLayout";
 import TitleBar from "../../components/TitleBar";
 
@@ -22,7 +22,26 @@ export default function DepartmentCamp() {
         </Col>
         <Col xs="9" className="formLayout">
           <p className="primaryHeading">DEPARTMENT CAMP</p>
-          <OrganisationForm />
+          <div className="d-flex flex-row-reverse mx-4 pb-2">
+            <Link
+              to="/departmentcampentry"
+              className="button text-decoration-none"
+            >
+              ADD
+            </Link>
+          </div>
+          <Table>
+            <thead>
+              <tr>
+                <th>S.No.</th>
+                <th>Organisation Name</th>
+                <th>Organiser Name</th>
+                <th>Address</th>
+                <th>Ph.No.</th>
+                <th></th>
+              </tr>
+            </thead>
+          </Table>
         </Col>
       </Row>
     </Container>

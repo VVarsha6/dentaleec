@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Analytics from "./containers/Analytics";
 import Dashboard from "./containers/Dashboard";
 import DepartmentCamp from "./containers/DepartmentCamp";
+import DepartmentCampEntry from "./containers/DepartmentCampEntry";
 import DepartmentOutpatient from "./containers/DepartmentOutpatient";
 import KovurCenter from "./containers/KovurCenter";
 import Organisation from "./containers/Organisation";
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/organisationentry" element={<OrganisationEntry />} />
         <Route path="/organisation" element={<Organisation />} />
+        <Route path="/departmentcampentry" element={<DepartmentCampEntry />} />
         <Route path="/departmentcamp" element={<DepartmentCamp />} />
         <Route path="/satellitecenter" element={<SatelliteCenter />} />
         <Route path="/analytics" element={<Analytics />} />
