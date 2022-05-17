@@ -40,30 +40,6 @@ const sidebarNavItems = [
     to: "/analytics",
     section: "analytics",
   },
-  {
-    display: "Satellite Center",
-    icon: <i class="fa-solid fa-satellite-dish"></i>,
-    to: "/satellitecenter",
-    section: "satellitecenter",
-  },
-  {
-    display: "TCC",
-    icon: <i class="fa-solid fa-person-booth"></i>,
-    to: "/tcc",
-    section: "tcc",
-  },
-  {
-    display: "View Data",
-    icon: <i class="fa-solid fa-file"></i>,
-    to: "/viewdata",
-    section: "viewdata",
-  },
-  {
-    display: "Kovur Center",
-    icon: <i class="fa-solid fa-hospital"></i>,
-    to: "/kovur",
-    section: "kovur",
-  },
 ];
 
 const SideBar = () => {

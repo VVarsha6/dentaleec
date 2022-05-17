@@ -34,11 +34,10 @@ export default function DepartmentCamp() {
             <thead>
               <tr>
                 <th>S.No.</th>
-                <th>Organisation Name</th>
+                <th>Patient Name</th>
                 <th>Organiser Name</th>
                 <th>Address</th>
                 <th>Ph.No.</th>
-                <th></th>
               </tr>
             </thead>
           </Table>
