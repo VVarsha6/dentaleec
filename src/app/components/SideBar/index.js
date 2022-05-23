@@ -35,6 +35,12 @@ const sidebarNavItems = [
     section: "departmentoutpatient",
   },
   {
+    display: "Public Health Center",
+    icon: <i class="fa-solid fa-bed"></i>,
+    to: "/departmentoutpatient",
+    section: "departmentoutpatient",
+  },
+  {
     display: "Analytics",
     icon: <i className="fa-solid fa-chart-line"></i>,
     to: "/analytics",
