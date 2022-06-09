@@ -14,7 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import "./patientFormStyle.scss";
 import { fetchData, getAllInfo } from "../../redux/Info/infoSlice";
 import { useEffect } from "react";
-import { db } from "./firebase-config";
+import { db } from "../../firebase/firebase-config";
 import {
   collection,
   getDocs,
@@ -24,40 +24,45 @@ import {
   doc,
 } from "firebase/firestore";
 function PatientForm() {
-  const [newYellow, setNewYellow] = useState("");
-  const [newpink, setnewPink] = useState("");
-  const [newid, setnewId] = useState("");
-  const [newpname, setnewPname] = useState("");
-  const [newoname, setnewOname] = useState("");
-  // const [gender, setGender] = useState("");
-  const [newage, setnewAge] = useState("");
-  const [newcontactnumber, setnewContactnumber] = useState("");
-  const [newdiagnosis, setnewDiagnosis] = useState("");
-
-  const data = useSelector(getAllInfo);
-
-  // const [yellow, setYellow] = useState("");
-  // const [pink, setPink] = useState("");
-  // const [id, setId] = useState("");
-  // const [pname, setPname] = useState("");
-  // const [oname, setOname] = useState("");
+  // const [newYellow, setNewYellow] = useState("");
+  // const [newpink, setnewPink] = useState("");
+  // const [newid, setnewId] = useState("");
+  // const [newpname, setnewPname] = useState("");
+  // const [newoname, setnewOname] = useState("");
   // // const [gender, setGender] = useState("");
-  // const [age, setAge] = useState("");
-  // const [contactnumber, setContactnumber] = useState("");
-  // const [diagnosis, setDiagnosis] = useState("");
+  // const [newage, setnewAge] = useState("");
+  // const [newcontactnumber, setnewContactnumber] = useState("");
+  // const [newdiagnosis, setnewDiagnosis] = useState("");
 
-  const createUser = async () => {
-    await addDoc(usersCollectionRef, {
-      yellow: Number(newYellow),
-      pink: Number(newPink),
-      id: Number(newID),
-      pname: newPName,
-      oname: newOName,
-      age: Number(newAge),
-      contactnumber: newContactNumber,
-      diagnosis: newDiagnosis,
-    });
-  };
+  // const data = useSelector(getAllInfo);
+
+  const [yellow, setYellow] = useState("");
+  const [pink, setPink] = useState("");
+  const [id, setId] = useState("");
+  const [pname, setPname] = useState("");
+  const [oname, setOname] = useState("");
+  // const [gender, setGender] = useState("");
+  const [age, setAge] = useState("");
+  const [contactnumber, setContactnumber] = useState("");
+  const [diagnosis, setDiagnosis] = useState("");
+
+  const [patient, setPatient] = useState([]);
+  const patientsCollectionRef = collection(db, "Patient-form");
+
+  // const createUser = async () => {
+  //   await addDoc(usersCollectionRef, {
+  //     yellow: Number(newYellow),
+  //     pink: Number(newPink),
+  //     id: Number(newID),
+  //     pname: newPName,
+  //     oname: newOName,
+  //     age: Number(newAge),
+  //     contactnumber: newContactNumber,
+  //     diagnosis: newDiagnosis,
+  //   });
+  // };
+
+  const dispatch = useDispatch();
 
   const {
     register,
@@ -65,18 +70,21 @@ function PatientForm() {
     // handleSubmit,
   } = useForm({ resolver: yupResolver(YupSchema) });
 
-  const storeData = () => {
-    const array = {
-      yellow,
-      pink,
-      id,
-      pname,
-      oname,
-      age,
-      contactnumber,
-      diagnosis,
-    };
-    dispatch(fetchData([...data, array]));
+  const storeData = async () => {
+    // const data = await getDocs(usersCollectionRef);
+    await addDoc(patientsCollectionRef, { 
+      // name: newName, age: Number(newAge) 
+      yellow: Number(yellow),
+      pink: Number(pink),
+      id: Number(id),
+      pname: pname,
+      oname: oname,
+      age: Number(age),
+      contactnumber: Number(contactnumber),
+      diagnosis: diagnosis
+     });
+    // set
+    // dispatch(fetchData([...data, array]));
   };
 
   return (
