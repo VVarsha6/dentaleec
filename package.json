@@ -10,7 +10,6 @@
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.8.2",
     "nodemon": "^2.0.16",
-    "plop": "^3.0.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-hook-form": "^7.29.0",
@@ -27,9 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "generate": "plop --plopfile internals/generators/index.js",
-    "test:generators": "ts-node --project=./internals/ts-node.tsconfig.json ./internals/testing/generators/test-generators.ts"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
